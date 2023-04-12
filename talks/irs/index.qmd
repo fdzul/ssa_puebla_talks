@@ -89,12 +89,12 @@ img {
   <div class="item4">Dengue</div>
   <div class="item5"><img src="irs_oms_2015.png" width="200" height="200"></div>
   <div class="item6">7</div> 
-  <div class="item5">6</div>
+  <div class="item5"><img src="irs_tdr_2010.png" width="200" height="200"></div>
   <div class="item6"><img src="irs_paho_2019.png" width="200" height="200"></div>
-  <div class="item6">OMS</div> 
+  <div class="item6">[OMS, 2015](https://apps.who.int/iris/handle/10665/177242)</div> 
   <div class="item6">TDR</div> 
-  <div class="item5">OMS</div>
-  <div class="item6">PAHI</div> 
+  <div class="item5">[TDR, 2010]()</div>
+  <div class="item6">[PAHO](https://www.paho.org/es/documentos/manual-para-aplicar-rociado-residual-intradomiciliario-zonas-urbanas-para-control-aedes)</div> 
 </div>
 </body>
 </html>
