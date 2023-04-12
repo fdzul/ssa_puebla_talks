@@ -64,6 +64,9 @@ highlight-style: a11y
   padding: 10px;
 }
 
+img {
+  border-radius: 50%;
+}
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -84,11 +87,11 @@ highlight-style: a11y
   <div class="item4">Enfermedad de Chagas</div>
   <div class="item3">Leishmaniasis</div>  
   <div class="item4">Dengue</div>
-  <div class="item5">6</div>
+  <div class="item5"><img src="irs_oms_2015.png" width="200" height="200"></div>
   <div class="item6">7</div> 
   <div class="item5">6</div>
-  <div class="item6">7</div> 
-  <div class="item5">[OMS](https://apps.who.int/iris/bitstream/handle/10665/69386/WHO_HTM_MAL_2006.1112_eng.pdf;sequence=1)</div>
+  <div class="item6"><img src="irs_paho_2019.png" width="200" height="200"></div>
+  <div class="item6">OMS</div> 
   <div class="item6">TDR</div> 
   <div class="item5">OMS</div>
   <div class="item6">PAHI</div> 
