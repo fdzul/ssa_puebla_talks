@@ -4,7 +4,7 @@ format:
     #theme: ["theme/q-theme.scss"]
     slide-number: c/t
     logo: "https://salud.yucatan.gob.mx/files/get/2889?v=1669754780"
-    footer: "[github.com/fdzul](https://beamish-salmiakki-2b94b9.netlify.app/talk/phd_fadm/#/)"
+    footer: "[github.com/fdzul](https://lovely-licorice-326d63.netlify.app/talks/irs/#/)"
     center-title-slide: true
 highlight-style: a11y
 ---
@@ -45,14 +45,61 @@ highlight-style: a11y
 
 ## [Rociado Residual Intradomiciliario^[Indoor Residual Spraying (IRS) en Ingles]]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
 <br>
-<p style="color:#660033;"> La aplicación de un insecticida en formas de gotas (100-200 micras) el interior de las superficies (paredes) de las viviendas con la finalidad de eliminar por un largo periódo a los artrópodos de importancia en Salud Pública que aterrizan o descansan en ellas ([WHO 2006](https://apps.who.int/iris/bitstream/handle/10665/69386/WHO_HTM_MAL_2006.1112_eng.pdf;sequence=1), [WHO 2007](https://www.who.int/publications/i/item/who-cds-ntd-whopes-gcdpp-2007.3),[WHO 2015](https://apps.who.int/iris/handle/10665/177242), [WHO 2019](https://www.paho.org/es/documentos/manual-para-aplicar-rociado-residual-intradomiciliario-zonas-urbanas-para-control-aedes))</p>
+<p style="color:#660033;"> La aplicación de un insecticida en formas de gotas (100-200 micras) el interior de las superficies (paredes) de las viviendas con la finalidad de eliminar por un largo periódo a los artrópodos de importancia en Salud Pública que aterrizan o descansan en ellas ([WHO 2006](https://apps.who.int/iris/bitstream/handle/10665/69386/WHO_HTM_MAL_2006.1112_eng.pdf;sequence=1), [WHO 2007](https://www.who.int/publications/i/item/who-cds-ntd-whopes-gcdpp-2007.3), [WHO 2015](https://apps.who.int/iris/handle/10665/177242), [WHO 2019](https://www.paho.org/es/documentos/manual-para-aplicar-rociado-residual-intradomiciliario-zonas-urbanas-para-control-aedes))</p>
 
 
-
-## [Recomendación Internacionales]{style="color:#003300;align-items: center"}
+## [IRS en ETVS]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #660033;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">Indoor Residual Spraying</div>
+  <div class="item3">Malaria</div>  
+  <div class="item4">Enfermedad de Chagas</div>
+  <div class="item3">Leishmaniasis</div>  
+  <div class="item4">Dengue</div>
+  <div class="item5">6</div>
+  <div class="item6">7</div> 
+  <div class="item5">6</div>
+  <div class="item6">7</div> 
+  <div class="item5">[OMS](https://apps.who.int/iris/bitstream/handle/10665/69386/WHO_HTM_MAL_2006.1112_eng.pdf;sequence=1)</div>
+  <div class="item6">TDR</div> 
+  <div class="item5">OMS</div>
+  <div class="item6">PAHI</div> 
+</div>
+</body>
+</html>
+
+## [IRS en México]{style="color:#003300;align-items: center"}
+
+## [IRS en Otros Grupos]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
 ## [Dios Botic]{style="color:#003300;"}
@@ -64,4 +111,4 @@ highlight-style: a11y
 
 -   ***celular*** : [8139945623]()
 
--   ***slides***: https://lustrous-lollipop-0c305e.netlify.app/reunion_quintana_roo/#/
+-   ***slides***: https://lovely-licorice-326d63.netlify.app/talks/irs/#/
