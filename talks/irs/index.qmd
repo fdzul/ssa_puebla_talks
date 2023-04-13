@@ -90,7 +90,7 @@ img {
   <div class="item4">Dengue</div>
   <div class="item5"><img src="irs_oms_2015.png" width="200" height="200"></div>
   <div class="item6"><img src="irs_oms_2006.png" width="200" height="200"></div> 
-  <div class="item5"><img src="irs_tdr_2010.png" width="200" height="200"></div>
+  <div class="item5"><img src="irs_oms_2022.png" width="200" height="200"></div>
   <div class="item6"><img src="irs_paho_2019.png" width="200" height="200"></div>
   <div class="item6">[OMS, 2015](https://apps.who.int/iris/handle/10665/177242)</div> 
   <div class="item6">[OMS, 2006](https://apps.who.int/iris/handle/10665/69223)</div> 
