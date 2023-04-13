@@ -389,10 +389,10 @@ img {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.item1 {
+.item_irs {
   grid-column-start: 1;
   grid-column-end: 5;
 }
@@ -400,7 +400,7 @@ img {
 
 
 <div class="grid-container">
-<div class="item1">
+<div class="item_irs">
 Indoor Residual Spraying
 </div>
 <div class="item3">
@@ -443,18 +443,23 @@ Dengue
 
 
 </section>
-<section id="irs-en-méxico" class="slide level2">
-<h2><span style="color:#003300;align-items: center">IRS en México</span></h2>
+<section id="programa-de-acción-específico-irs" class="slide level2">
+<h2><span style="color:#003300;align-items: center">Programa de Acción Específico &amp; IRS</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+<br>
 
 
 <style>
+.item1 {
+  grid-area: myArea;
+}
+
 .grid-container2 {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 5px;
+  grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+  gap: 10px;
   background-color: #660033;
-  padding: 5px;
+  padding: 10px;
 }
 
 .grid-container2 > div {
@@ -463,40 +468,30 @@ Dengue
   padding: 20px 0;
   font-size: 30px;
 }
-
-.item8 {
-  grid-area: 1 / 2 / 5 / 6;
-}
 </style>
 
 
 <div class="grid-container2">
 <div class="item1">
-Arbovirosis
+<img src="pae_etvs.png" width="200" height="200">
 </div>
 <div class="item2">
-Paludismo
+Dengue
 </div>
 <div class="item3">
 Chagas
 </div>
-<div class="item8">
-<img src="pae_etvs.png" width="200" height="200">
-</div>
 <div class="item4">
-Oncocersosis
-</div>
-<div class="item5">
 IPPA
 </div>
-<div class="item7">
-Leishmaniasis
+<div class="item5">
+Paludismo
+</div>
+<div class="item6">
+Leishmaaniasis
 </div>
 <div class="item7">
-Rickettiosis
-</div>
-<div class="item7">
-8
+Rickettsiosis
 </div>
 </div>
 
