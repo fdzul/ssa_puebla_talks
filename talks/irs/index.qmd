@@ -103,7 +103,7 @@ img {
 </body>
 </html>
 
-## [Artropodos de Importancia Medica]{style="color:#003300;align-items: center"}
+## [Artrópodos de Importancia Médica]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 <br>
