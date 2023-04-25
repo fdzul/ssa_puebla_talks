@@ -106,7 +106,6 @@ img {
 ## [Artrópodos de Importancia Médica]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-<br>
 <html>
 <head>
 <style>
@@ -125,6 +124,7 @@ img {
 .grid-container_aim > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  vertical-align: top; 
   padding: 20px 0;
   font-size: 30px;
 }
@@ -133,10 +133,15 @@ img {
 <body>
 <div class="grid-container_aim">
   <div class="item1"><img src="irs_oms_2006.png" width="200" height="200"></div>
-  <div class="item2">Alacranes</div>
-  <div class="item3">Arañas</div>  
-  <div class="item4">Pulgas</div>
-  <div class="item5">Lutzomyias</div>
+  <div class="item2"><img src="https://tse4.mm.bing.net/th?id=OIP.pTz_iv3zvTNCMvngw4Bt3AHaF7&pid=Api" width="150" height="150"></div>
+  <div class="item3">
+  <img src="http://upload.wikimedia.org/wikipedia/commons/9/99/Brown_recluse_spider%2C_Loxosceles_reclusa.jpg" width="150" height="150">
+  </div>  
+  <div class="item4"><img src="https://www.field-studies-council.org/wp-content/uploads/2020/09/Fleas.jpg" width="150" height="150">
+  </div>
+  <div class="item5">
+  <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2019/11/14/000632876W.jpg" width="150" height="150">
+  </div>
   <div class="item6">Cucarachas</div>
   <div class="item7">Moscas Hematofagas</div>
   <div class="item7">Garrapatas</div>
