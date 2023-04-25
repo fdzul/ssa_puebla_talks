@@ -340,29 +340,44 @@ img {
 </body>
 </html>
 
-## [Aplicación de Insecticidas]{style="color:#003300;"}
+## [Aplicación de Insecticidas^[[OMS, 2002](https://apps.who.int/iris/handle/10665/67365)]]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-```{r}
-DiagrammeR::grViz("
-digraph circo {
 
-graph [layout = circo]
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
 
-node [shape = circle,
-      style = filled,
-      color = grey,
-      label = '']
+.grid-container4 {
+  display: grid;
+  grid-template-areas: 'myArea.  .' 'myArea.  .';
+  gap: 10px;
+  background-color: #003300;
+  padding: 10px;
+}
 
+.grid-container4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
 
-node [fillcolor = green]
-a 
+<div class="grid-container4">
+  <div class="item1"><img src="use_insecticides.png" width="350" height="350"></div>
+  <div class="item2"> 
+<img src="use_insecticide2.png" width="550" height="350">
+  </div>
 
-node [fillcolor = orange]
+</div>
 
-edge [color = grey]
-a -> {b c d e f}
-}")
-```
+</body>
+</html>
 
 
 ## [Dios Botic]{style="color:#003300;"}

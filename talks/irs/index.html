@@ -317,10 +317,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="index_files/libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
-  <script src="index_files/libs/viz-1.8.2/viz.js"></script>
-  <link href="index_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-  <script src="index_files/libs/grViz-binding-1.0.9/grViz.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -733,15 +729,43 @@ Con IRS <img src="sprayed.png">
 
 </section>
 <section id="aplicación-de-insecticidas" class="slide level2">
-<h2><span style="color:#003300;">Aplicación de Insecticidas</span></h2>
+<h2><span style="color:#003300;">Aplicación de Insecticidas<sup>1</sup></span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-<div class="cell">
-<div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0dc9a677b3f14a5e5d8d" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-0dc9a677b3f14a5e5d8d">{"x":{"diagram":"\ndigraph circo {\n\ngraph [layout = circo]\n\nnode [shape = circle,\n      style = filled,\n      color = grey,\n      label = \"\"]\n\n\nnode [fillcolor = green]\na \n\nnode [fillcolor = orange]\n\nedge [color = grey]\na -> {b c d e f}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-areas: 'myArea.  .' 'myArea.  .';
+  gap: 10px;
+  background-color: #003300;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+
+
+<div class="grid-container4">
+<div class="item1">
+<img src="use_insecticides.png" width="350" height="350">
+</div>
+<div class="item2">
+<img src="use_insecticide2.png" width="550" height="350">
 </div>
 </div>
-</section>
+
+
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://apps.who.int/iris/handle/10665/67365">OMS, 2002</a></p></li></ol></aside></section>
 <section id="dios-botic" class="slide level2">
 <h2><span style="color:#003300;">Dios Botic</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
