@@ -317,6 +317,10 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+  <script src="index_files/libs/viz-1.8.2/viz.js"></script>
+  <link href="index_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="index_files/libs/grViz-binding-1.0.9/grViz.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -370,7 +374,6 @@ La aplicación de un insecticida en formas de gotas (100-200 micras) el interior
 <section id="indoor-residual-spraying-en-las-etvs" class="slide level2">
 <h2><span style="color:#003300;align-items: center">Indoor Residual Spraying en las ETVs</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-<br>
 
 
 <style>
@@ -378,8 +381,8 @@ La aplicación de un insecticida en formas de gotas (100-200 micras) el interior
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 1px;
-  background-color: #660033;
-  padding: 1px;
+  background-color: #003300;
+  padding: 10px;
 }
 
 img {
@@ -388,7 +391,7 @@ img {
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   font-size: 30px;
 }
 
@@ -401,22 +404,22 @@ img {
 
 <div class="grid-container">
 <div class="item_irs">
-Indoor Residual Spraying
+<span style="color:#003300"><strong>Indoor Residual Spraying</strong></span>
 </div>
 <div class="item3">
-Malaria
+<span style="color:#003300"><strong>Paludismo</strong></span>
 </div>
 <div class="item4">
-Enfermedad de Chagas
+<span style="color:#003300"><strong>Enfermedad de Chagas</strong></span>
 </div>
 <div class="item3">
-Leishmaniasis
+<span style="color:#003300"><strong>Leishmaniasis</strong></span>
 </div>
 <div class="item4">
-Dengue
+<span style="color:#003300"><strong>Dengue</strong></span>
 </div>
 <div class="item4">
-Filariasis
+<span style="color:#003300"><strong>Filariasis</strong></span>
 </div>
 <div class="item5">
 <img src="irs_oms_2015.png" width="200" height="200">
@@ -475,7 +478,7 @@ Filariasis
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   vertical-align: top; 
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 30px;
 }
 </style>
@@ -486,22 +489,22 @@ Filariasis
 <img src="irs_oms_2006.png" width="300" height="300">
 </div>
 <div class="item2">
-<img src="https://tse4.mm.bing.net/th?id=OIP.pTz_iv3zvTNCMvngw4Bt3AHaF7&amp;pid=Api" width="120" height="120">
+<img src="https://tse4.mm.bing.net/th?id=OIP.pTz_iv3zvTNCMvngw4Bt3AHaF7&amp;pid=Api" width="150" height="150">
 </div>
 <div class="item3">
-<img src="http://upload.wikimedia.org/wikipedia/commons/9/99/Brown_recluse_spider%2C_Loxosceles_reclusa.jpg" width="120" height="120">
+<img src="http://upload.wikimedia.org/wikipedia/commons/9/99/Brown_recluse_spider%2C_Loxosceles_reclusa.jpg" width="150" height="150">
 </div>
 <div class="item4">
-<img src="https://www.field-studies-council.org/wp-content/uploads/2020/09/Fleas.jpg" width="120" height="120">
+<img src="https://www.field-studies-council.org/wp-content/uploads/2020/09/Fleas.jpg" width="150" height="150">
 </div>
 <div class="item5">
-<img src="https://1.bp.blogspot.com/-IOo63uEJB98/YN7E1fmOv9I/AAAAAAAAtRk/qFvPAw_tuDYX9-OYcTX5SB5NgI0FylowwCLcBGAsYHQ/s1200/clipping_I3rLPo_0028.jpg" width="120" height="120">
+<img src="https://1.bp.blogspot.com/-IOo63uEJB98/YN7E1fmOv9I/AAAAAAAAtRk/qFvPAw_tuDYX9-OYcTX5SB5NgI0FylowwCLcBGAsYHQ/s1200/clipping_I3rLPo_0028.jpg" width="150" height="150">
 </div>
 <div class="item6">
-<img src="http://bugguide.net/images/raw/6KKK6KSKNK5KAKAQTKXKVKVQOKIKJ07KJ05QY09QF0GKCK7KDK5KWKQKTKWQAKUQZS7KJ07KHSVQRS.jpg" width="120" height="120">
+<img src="http://bugguide.net/images/raw/6KKK6KSKNK5KAKAQTKXKVKVQOKIKJ07KJ05QY09QF0GKCK7KDK5KWKQKTKWQAKUQZS7KJ07KHSVQRS.jpg" width="150" height="150">
 </div>
 <div class="item7">
-<img src="https://erradica.com/wp-content/uploads/2016/11/Remedios-caseros-para-eliminar-las-chinches..jpg" width="120" height="120">
+<img src="https://erradica.com/wp-content/uploads/2016/11/Remedios-caseros-para-eliminar-las-chinches..jpg" width="150" height="150">
 </div>
 </div>
 
@@ -540,13 +543,13 @@ Filariasis
 <img src="pae_etvs.png" width="350" height="350">
 </div>
 <div class="item2">
-Dengue
+<span style="color:#003300"><strong>Dengue</strong></span>
 </div>
 <div class="item3">
-Chagas
+<strong>Chagas</strong>
 </div>
 <div class="item4">
-IPPA
+<strong>IPPA</strong>
 </div>
 <div class="item5">
 Paludismo
@@ -555,7 +558,7 @@ Paludismo
 Leishmaniasis
 </div>
 <div class="item7">
-Rickettsiosis
+<strong>Rickettsiosis</strong>
 </div>
 </div>
 
@@ -619,7 +622,7 @@ Reducir el contacto humano-triatominos.
   display: grid;
   grid-template-areas: 'myArea.  .' 'myArea.  .';
   gap: 10px;
-  background-color: #660033;
+  background-color: #003300;
   padding: 10px;
 }
 
@@ -656,7 +659,6 @@ infestación &lt; 1%
 <section id="irs-o-no-irs" class="slide level2">
 <h2><span style="color:#003300;">IRS o no IRS</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-<br>
 
 
 <style>
@@ -668,7 +670,7 @@ infestación &lt; 1%
   display: grid;
   grid-template-areas: 'myArea.  .' 'myArea.  .';
   gap: 10px;
-  background-color: #660033;
+  background-color: #003300;
   padding: 10px;
 }
 
@@ -683,10 +685,10 @@ infestación &lt; 1%
 
 <div class="grid-container4">
 <div class="item1">
-<img src="ivm.png" width="350" height="350">
+<img src="ivm.png" width="350" height="450">
 </div>
 <div class="item2">
-Intradomicilio
+Sin IRS <img src="unsprayed.png">
 </div>
 </div>
 
@@ -695,6 +697,50 @@ Intradomicilio
 <section id="irs-o-no-irs-1" class="slide level2">
 <h2><span style="color:#003300;">IRS o no IRS</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-areas: 'myArea.  .' 'myArea.  .';
+  gap: 10px;
+  background-color: #003300;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+
+
+<div class="grid-container4">
+<div class="item1">
+<img src="ivm.png" width="350" height="450">
+</div>
+<div class="item2">
+Con IRS <img src="sprayed.png">
+</div>
+</div>
+
+
+</section>
+<section id="aplicación-de-insecticidas" class="slide level2">
+<h2><span style="color:#003300;">Aplicación de Insecticidas</span></h2>
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0dc9a677b3f14a5e5d8d" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-0dc9a677b3f14a5e5d8d">{"x":{"diagram":"\ndigraph circo {\n\ngraph [layout = circo]\n\nnode [shape = circle,\n      style = filled,\n      color = grey,\n      label = \"\"]\n\n\nnode [fillcolor = green]\na \n\nnode [fillcolor = orange]\n\nedge [color = grey]\na -> {b c d e f}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
 <section id="dios-botic" class="slide level2">
 <h2><span style="color:#003300;">Dios Botic</span></h2>
