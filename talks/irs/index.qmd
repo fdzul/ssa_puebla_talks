@@ -341,7 +341,7 @@ img {
 </html>
 
 ## [Uso Racional de los Insecticidas^[[OMS, 2002](https://apps.who.int/iris/handle/10665/67365)]]{style="color:#003300;"}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">]
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r}
 DiagrammeR::grViz("
@@ -370,7 +370,9 @@ a -> {b c d e f}
 ## [Uso Racional de los Insecticidas^[[OMS, 2004](https://www.who.int/publications/i/item/WHO-CDS-WHOPES-2004.9a-b)]]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+```{r}
 
+```
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
