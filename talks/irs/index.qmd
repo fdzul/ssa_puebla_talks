@@ -202,28 +202,28 @@ img {
 
 ### Objetivo General
 
--  Reducir e interrumpir la transmisión del agente causal
+-  <p style="color:#660033;">Reducir e interrumpir la transmisión del agente causal</p>
 
 
 ### Objetivos Específicos
 
-- Reducir la esperanza de vida del vector a intervalos menores del periodo de incubación del agente causal. 
-- Reducir la prevalencia y la densidad del vector.
-- Reducir el contacto humano-vector.
+- <p style="color:#660033;">Reducir la esperanza de vida del vector a intervalos menores del periodo de incubación del agente causal.</p> 
+- <p style="color:#660033;">Reducir la prevalencia y la densidad del vector.</p>
+- <p style="color:#660033;">Reducir el contacto humano-vector.</p>
 
 ## [Objetivo del IRS en la EC]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ### Objetivo General
 
--  Eliminar, Reducir o Interrumpir la transmisión  de **T. cruzi**
+-  <p style="color:#660033;">Eliminar, Reducir o Interrumpir la transmisión  de **T. cruzi**
 
 
 ### Objetivos Específicos
 
--	Reducir la esperanza de vida de los triatominos a intervalos menores del período de incubación del agente causal.
--	Reducir la prevalencia & la densidad de los triatominos.
--	Reducir el contacto humano-triatominos.
+-	<p style="color:#660033;">Reducir la esperanza de vida de los triatominos a intervalos menores del período de incubación del agente causal.</p>
+-	<p style="color:#660033;">Reducir la prevalencia & la densidad de los triatominos.</p>
+-	<p style="color:#660033;">Reducir el contacto humano-triatominos.</p>
 
 ## [Objetivos OPS (2019)]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -265,6 +265,48 @@ img {
 </html>
 
 *por 3 años
+
+## [IRS o no IRS]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+<br>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-areas: 'myArea.  .' 'myArea.  .';
+  gap: 10px;
+  background-color: #660033;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container4">
+  <div class="item1"><img src="ivm.png" width="350" height="350"></div>
+  <div class="item2"> Intradomicilio</div>
+
+</div>
+
+</body>
+</html>
+
+
+## [IRS o no IRS]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
