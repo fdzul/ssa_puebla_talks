@@ -221,10 +221,50 @@ img {
 
 ### Objetivos Específicos
 
--	Reducir la esperanza de vida del triatominos a intervalos menores del período de incubación del agente causal.
+-	Reducir la esperanza de vida de los triatominos a intervalos menores del período de incubación del agente causal.
 -	Reducir la prevalencia & la densidad de los triatominos.
 -	Reducir el contacto humano-triatominos.
 
+## [Objetivos OPS (2019)]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+<br>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-areas: 'myArea.  .' 'myArea.  .';
+  gap: 10px;
+  background-color: #660033;
+  padding: 10px;
+}
+
+.grid-container3 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container3">
+  <div class="item1"><img src="irs_paho_objetivos.png" width="350" height="350"></div>
+  <div class="item2"> Intradomicilio</div>
+  <div class="item3">Peridomicilio</div> 
+  <div class="item4">infestación =  cero*</div>
+  <div class="item4">infestación < 1%</div>
+</div>
+
+</body>
+</html>
+
+*por 3 años
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
