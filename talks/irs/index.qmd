@@ -33,7 +33,7 @@ highlight-style: a11y
 
 `r fontawesome::fa("github", "black")` [github.com/fdzul](https://fdzul.github.io/web_site_fadm/)
 
-![](irs.png){.absolute top="250" left="650" width="550"}
+![](irs.png){.absolute top="250" left="600" width="550"}
 
 ## [Rociado Residual Intradomiciliario]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -65,7 +65,7 @@ highlight-style: a11y
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -371,8 +371,517 @@ a -> {b c d e f}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r}
+DiagrammeR::grViz("digraph {
+                  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  # node definitions
+  node [shape = rectangle, style = filled, color = grey, 
+  nodesep = 1, 
+  fixedsize = true, 
+  width = 12] 
+  
+  # edge definition
+  edge [color = grey, arrowhead = normal, arrowtail = dot]
+  
+  ##### datasets
+  
+  step1 [label = 'Describir & Analizar la situación de las ETVS',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+  
+  step2 [label = 'Estratificar la ETV basado en variables relevantes',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+  
+  step3 [label = 'Determinar el control de vectores en cada estrato',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white',fontsize = 20]
+
+  step4 [label = 'Determinar qué método(s) es(son) adecuado(s)',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+ 
+ # 
+ step5 [label = 'Cuando el uso de insecticidas sea esencial, seleccionar el(los) método(s) de aplicación',  fillcolor =  '#DB4437', color = 'white', fontcolor = 'white', fontsize = 20]
+ 
+
+ # final dataset
+ 
+ step6 [label = 'Determinar qué insecticida usar y cuándo, dónde y cómo aplicarlo',  fillcolor =  '#DB4437', color = 'white', fontcolor = 'white', fontsize = 20]
+ 
+ ###
+ step7 [label = 'Establecer productos y objetivos operativos y seleccionar métodos de seguimiento y evaluación',  fillcolor =  '#2EB67D', color = 'white', fontcolor = 'white', fontsize = 20]
+ 
+ ##### define the relation
+ 
+ step1 -> step2 -> step3 -> step4 -> step5 -> step6 -> step7
+ 
+ 
+}")
+```
+
+## [Ciclo de Vida del IRS^[[OMS, 2015](https://www.who.int/publications/i/item/9789241508940)]]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](irs_cycle.png){width=90%}
+
+## [Que Aplicar]{style="color:#ECB22E;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+DiagrammeR::grViz("
+digraph circo {
+graph [layout = circo]
+node [shape = circle,
+      style = filled, nodesep = 1, fixedsize = false, width = 2]
+a [label = 'Uso Sensato de los Insecticidas',  fillcolor =  '#767676', color = 'white', fontcolor = 'white', fontsize = 14]
+
+b [label = 'Que Aplicar',  fillcolor =  '#ECB22E', color = 'white', fontcolor = 'white',  fontsize = 20]
+c [label = 'Cuando Aplicar',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white', fontsize = 20]
+
+d [label = 'Con que Aplicar',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+e [label = 'Como Aplicar',  fillcolor =  '#36C5F0', color = 'white', fontcolor = 'white', fontsize = 20]
+f [label = 'Donde Aplicar',  fillcolor =  '#FF5A5F', color = 'white', fontcolor = 'white', fontsize = 20]
+
+
+edge [color = grey]
+
+
+a -> {b c d e f}
+}")
+```
+
+## [Insecticidas para el IRS de la EC]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](who 2012 .png){width=100%}
+:::
+
+::: {.column width="60%"}
+
+<p style="color:#E01E5A;"> Que insecticida</p> (molecula y formulación) debe ser aplicado?.
+Cual es el producto más adecuado tomando en consideración su<p style="color:#2EB67D;">seguridad, eficacia, aceptabilidad, costo y disponibilidad?</p>
+
+:::
+
+::::
+
+[OMS, 2012](https://www.who.int/publications/i/item/9789241503426)
+
+## [Insecticidas para el IRS de la EC]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](who 2012 .png){width=100%}
+:::
+
+::: {.column width="70%"}
+
+<p style="color:#ECB22E;">Que aplicar</p>
+<p style="color:#2EB67D;">Diagnóstico de la susceptibilidad de la especie.</p>
+<p style="color:#2EB67D;">Información de la residualidad del insecticida.</p>
+<p style="color:#2EB67D;">Registro y autorización para su uso en Salud Pública.</p>
+<p style="color:#2EB67D;">Datos de seguridad</p>
+
+:::
+
+::::
+
+[OMS, 2012](https://www.who.int/publications/i/item/9789241503426)
+
+
+## [Insecticidas para el IRS de la EC]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](who 2012 .png){width=100%}
+:::
+
+::: {.column width="70%"}
+
+<p style="color:#ECB22E;">Que aplicar</p>
+<p style="color:#2EB67D;">Datos de aceptabilidad de los Aplicadores </p>
+<p style="color:#2EB67D;">Datos de aceptabilidad de la población</p>
+<p style="color:#2EB67D;">Datos de costo </p>
+<p style="color:#2EB67D;">Datos de Disponibilidad.</p>
+
+:::
+
+::::
+
+[OMS, 2012](https://www.who.int/publications/i/item/9789241503426)
+
+## [Recomendados por OMS]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+tibble::tibble(Molecula = c("Bendiocarb",
+                            "Propoxur",
+                            "Fenitrotion",
+                            "Malation",
+                            "Alfa-Cypermetrina",
+                            "Beta-Cyflutrina",
+                            "Bifentrina",
+                            "Cyflutrina",
+                            "Cypermetrina",
+                            "Deltametrina",
+                            "Etofenprox",
+                            "Lamba-Cialotrina"),
+               "Grupo Químico" = c("Carbamato",
+                                   "Carbamato",
+                                   "Organofosforado",
+                                   "Organofosforado",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide",
+                                   "Piretroide"),
+               "Aedes" = c("0.1-0.4",
+                           "1-2",
+                           2,
+                           2,
+                           "0.02-0.03",
+                           NA,
+                           "0.025-0.05",
+                           "0.020-0.05",
+                           "NA",
+                           "0.020-0.025",
+                           "0.1-0.3",
+                           "0.02-0.03"),
+               "Triatominos" = c("0.4-1",
+                                 1,
+                                 1,
+                                 2,
+                                 0.050,
+                                 0.025,
+                                 0.050,
+                                 0.050,
+                                 0.125,
+                                 0.025,
+                                 0.125,
+                                 0.030)) |>
+    kableExtra::kable() |>
+    kableExtra::kable_classic() |>
+    kableExtra::kable_styling("striped", font_size = 22) |>
+    kableExtra::add_header_above(c("Insecticida" = 2, 
+                                   "Dosis gr.i/m2" = 2)) |>
+  kableExtra::add_footnote(c("Pesticides & Their Application. OMS 2006."), notation = "alphabet")
 
 ```
+
+
+## [Recomendados por el CENAPRECE]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+tibble::tibble("Molecula" = c("Deltametrina",
+                              "Lambda cyhalotrina",
+                              "Lambda cyhalotrina",
+                              "Bifentrina",
+                              "Alfacipermetrina",
+                              "Bendiocarb",
+                              "Bendiocarb",
+                              "Propoxur",
+                              "Pirimifos metil"),
+               "Concentracion" = c(25.38, 9.53, 10, 10, 
+                                   5.83, 80, 80, 70, 28.16),
+               "Grupo Químico" = c(rep("Piretroide", times =5),
+                                   "Carbamato", "Carbamato",
+                                   "Carbamato", "Organofosforado"),
+               "Aedes" = c("0.020-0.025",
+                           "0.020-0.030",
+                           "0.020-0.030",
+                           "0.025-0.050",
+                           "0.020-0.030",
+                           "0.100-0.400",
+                           "0.100-0.400",
+                           "1.000-2.000",
+                           "1.000-2.000"),
+               "Triatominos" = c(0.025, 
+                                 0.030,
+                                 0.030,
+                                 0.050,
+                                 0.050,
+                                 "0.4-1.0",
+                                 "0.4-1.0",
+                                 1,
+                                 NA)) |>
+    kableExtra::kable() |>
+    kableExtra::kable_classic() |>
+    kableExtra::kable_styling("striped", font_size = 22) |>
+    kableExtra::add_header_above(c("Insecticida" = 3, 
+                                   "Dosis gr.i/m2" = 2))
+```
+
+[OMS, 2006](https://apps.who.int/iris/handle/10665/69223)
+
+
+## [Donde Aplicar]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+DiagrammeR::grViz("
+digraph circo {
+graph [layout = circo]
+node [shape = circle,
+      style = filled, nodesep = 1, fixedsize = false, width = 2]
+a [label = 'Uso Sensato de los Insecticidas',  fillcolor =  '#767676', color = 'white', fontcolor = 'white', fontsize = 14]
+
+b [label = 'Que Aplicar',  fillcolor =  '#ECB22E', color = 'white', fontcolor = 'white',  fontsize = 20]
+c [label = 'Cuando Aplicar',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white', fontsize = 20]
+
+d [label = 'Con que Aplicar',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+e [label = 'Como Aplicar',  fillcolor =  '#36C5F0', color = 'white', fontcolor = 'white', fontsize = 20]
+f [label = 'Donde Aplicar',  fillcolor =  '#FF5A5F', color = 'white', fontcolor = 'white', fontsize = 20]
+
+
+edge [color = grey]
+
+
+a -> {b c d e f}
+}")
+```
+
+
+## [Donde Aplicar]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+DiagrammeR::grViz("
+digraph circo {
+graph [layout = circo]
+node [shape = circle,
+      style = filled, nodesep = 1, fixedsize = false, width = 2]
+a [label = 'Uso Sensato de los Insecticidas',  fillcolor =  '#767676', color = 'white', fontcolor = 'white', fontsize = 14]
+
+b [label = 'Que Aplicar',  fillcolor =  '#ECB22E', color = 'white', fontcolor = 'white',  fontsize = 20]
+c [label = 'Cuando Aplicar',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white', fontsize = 20]
+
+d [label = 'Con que Aplicar',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+e [label = 'Como Aplicar',  fillcolor =  '#36C5F0', color = 'white', fontcolor = 'white', fontsize = 20]
+f [label = 'Donde Aplicar',  fillcolor =  '#FF5A5F', color = 'white', fontcolor = 'white', fontsize = 20]
+
+
+edge [color = grey]
+
+
+a -> {b c d e f}
+}")
+```
+
+
+## [Estratifición del Riesgo]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+DiagrammeR::grViz("digraph {
+                  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  # node definitions
+  node [shape = rectangle, style = filled, color = grey, 
+  nodesep = 1, 
+  fixedsize = false, 
+  width = 1.7] 
+  
+  # edge definition
+  edge [color = grey, arrowhead = normal, arrowtail = dot]
+  
+  ##### fuentes de información
+  
+  inf [label = 'Bases de Datos',  fillcolor =  '#DB4437', color = 'white', fontcolor = 'white']
+  
+  
+  ##### datasets
+  
+  ento [label = 'Vigilancia Entomológica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  epi [label = 'Vigilancia Epidemiológica',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  clim [label = 'Datos Clímaticos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  socio [label = 'Datos Sociodemográficos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  land [label = 'Cobertura Terrestre',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  mov [label = 'Datos de Movilidad',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+ 
+ ### 
+ ana [label = 'Estadísstica Multivariada',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+ 
+ ### 
+ indice [label = 'Indice de Riesgo',  fillcolor =  'DodgerBlue', color = 'white', fontcolor = 'white']
+ 
+ ###
+ hotspots [label = 'Hotspots',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white']
+ 
+ ##### define the relation
+ 
+ inf -> {ento, epi, clim, socio, land, mov} -> ana -> indice -> hotspots
+ 
+ 
+}")
+```
+
+
+## [Donde Aplicar en Arbovirosis]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+## [Cuando Aplicar]{style="color:#E01E5A;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+DiagrammeR::grViz("
+digraph circo {
+graph [layout = circo]
+node [shape = circle,
+      style = filled, nodesep = 1, fixedsize = false, width = 2]
+a [label = 'Uso Sensato de los Insecticidas',  fillcolor =  '#767676', color = 'white', fontcolor = 'white', fontsize = 14]
+
+b [label = 'Que Aplicar',  fillcolor =  '#ECB22E', color = 'white', fontcolor = 'white',  fontsize = 20]
+c [label = 'Cuando Aplicar',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white', fontsize = 20]
+
+d [label = 'Con que Aplicar',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
+e [label = 'Como Aplicar',  fillcolor =  '#36C5F0', color = 'white', fontcolor = 'white', fontsize = 20]
+f [label = 'Donde Aplicar',  fillcolor =  '#FF5A5F', color = 'white', fontcolor = 'white', fontsize = 20]
+
+
+edge [color = grey]
+
+
+a -> {b c d e f}
+}")
+```
+
+## [Cuando Aplicar]{style="color:#E01E5A;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r mia_mexico, echo=FALSE, warning=FALSE, message=FALSE,out.height="120%", out.width="120%"}
+# Step 1. load the dataset #####
+load("/Users/fdzul/Library/CloudStorage/OneDrive-Personal/automatic_read_sinave/8.RData/epid_channel_data.RData")
+
+# Step 2. extract the dengue cases of veracruz ####
+x <- x |>
+    dplyr::filter(DES_EDO_RES == "VERACRUZ") 
+
+y <- tibble::tibble(SEM = x$SEM,
+                    y = x$q25,
+                    arm = "Nuevo Paradigma")
+prob <- tibble::tibble(SEM = x$SEM,
+                       prob = rep(0, length(x$SEM)))
+
+# plot risk stratificaction  #####
+ggplot2::ggplot() +
+    ggplot2::geom_rect(ggplot2::aes(xmin = c(-Inf, 25), 
+                                    xmax = c(25, Inf), 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = c("#2EB67D", "#E01E5A"),
+                       alpha = .2) +
+    ggplot2::geom_rect(ggplot2::aes(xmin = 20, 
+                                    xmax = 25, 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = "#ECB22E",
+                       alpha = 0.8) +
+    ggplot2::geom_rect(ggplot2::aes(xmin = 38, 
+                                    xmax = 40, 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = "#36C5F0",
+                       alpha = 0.8) +
+    ggplot2::geom_vline(xintercept = 25,
+                        color = "gray", #"#36C5F0",
+                        size = 1,
+                        linetype = 3) +
+    ggplot2::geom_vline(xintercept = 20,
+                        color = "gray", #"#36C5F0",
+                        size = 1,
+                        linetype = 3) +
+    ggplot2::geom_line(data = x, 
+                       ggplot2::aes(x = SEM,
+                                    y = q75-10),
+                       col = "#E01E5A",
+                       size = 3) +
+    ggplot2::geom_line(data = y, 
+                       ggplot2::aes(x = SEM,
+                                    y = y),
+                       color = "#2EB67D", #"#36C5F0",
+                       size = 3) +
+    ggplot2::ylab("Número de Casos") +
+    ggplot2::xlab("Semanas Epidemiológicas") +
+    ggplot2::annotate("text",
+                      label = "Control Proactivo",
+                      x = 10, 
+                      y = 450,
+                      #text = "risk",
+                      col = "#2EB67D",
+                      size = 6) +
+    ggplot2::annotate("text",
+                      label = "Escenarios Operativos \nbasados \nen \nTransmisión Persistente",
+                      x = 10, 
+                      y = 380,
+                      #text = "risk",
+                      col = "#2EB67D",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Control Reactivo",
+                      x = 42, 
+                      y = 450,
+                      #text = "risk",
+                      col = "#E01E5A",
+                      size = 6) +
+    ggplot2::annotate("text",
+                      label = "Escenarios Operativos \nbasados \nen \nTransmisión Activa",
+                      x = 45, 
+                      y = 380,
+                      #text = "risk",
+                      col = "#E01E5A",
+                      size = 4) +
+    ggplot2::geom_line(data = prob, 
+                       ggplot2::aes(x = SEM,
+                                    y = prob),
+                       color = "#36C5F0",
+                       size = 2)  +
+    ggplot2::annotate("text",
+                      label = "Acciones Específica Básicas",
+                      x = 10, 
+                      y = 280,
+                      col = "gray",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Control de Probables",
+                      x = 10, 
+                      y = 250,
+                      col = "#36C5F0",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Rociado Residual",
+                      x = 10, 
+                      y = 220,
+                      col = "#ECB22E",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Control Larvario",
+                      x = 10, 
+                      y = 200,
+                      col = "#ECB22E",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Acciones Específicas de Soporte",
+                      x = 10, 
+                      y = 150,
+                      col = "gray",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Termonebulización,\n Nebulización, & \nEliminación Masiva de Criaderos",
+                      x = 10, 
+                      y = 110,
+                      col = "gray",
+                      size = 3)
+
+```
+
+
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
