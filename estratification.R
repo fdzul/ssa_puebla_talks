@@ -21,14 +21,12 @@ DiagrammeR::grViz("digraph {
   
   ##### datasets
   
-  cenaprece [label = 'Vigilancia Entomológica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
-  
-  indre [label = 'Vigilancia Epidemiológica',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
-  
-  revision [label = 'Datos Clímaticos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
-  bas_per [label = 'Datos Sociodemográficos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
-  gbif [label = 'Cobertura Terrestre',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
-  conabio [label = 'Datos de Movilidad',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  ento [label = 'Vigilancia Entomológica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  epi [label = 'Vigilancia Epidemiológica',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  clim [label = 'Datos Clímaticos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  socio [label = 'Datos Sociodemográficos',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  land [label = 'Cobertura Terrestre',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
+  mov [label = 'Datos de Movilidad',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
  
  ### 
  ana [label = 'Estadísstica Multivariada',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
@@ -41,7 +39,7 @@ DiagrammeR::grViz("digraph {
  
  ##### define the relation
  
- inf -> {cenaprece indre revision bas_per gbif conabio} -> ana -> indice -> hotspots
+ inf -> {ento, epi, clim, socio, land, mov} -> ana -> indice -> hotspots
  
  
 }")
