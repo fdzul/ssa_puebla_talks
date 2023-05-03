@@ -43,6 +43,22 @@ highlight-style: a11y
 <br>
 <p style="color:#660033;">Actualizar al personal de vectores sobre los avances en las técnicas Rociado Residual Intradomiciliario (IRS) para el control de las Enfermedades Transmitidas por Vector (ETVs)</p>
 
+
+## [Temario]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+- Definición del IRS.
+- Artrópodos en los que se usa el IRS.
+- Objetivos del IRS.
+- Como,Cuando, y Donde usar el IRS.
+- Revisión de las Técnicas de IRS.
+- Técnica de Aplicación (Teórico y Experimental).
+- Equipo de aplicación IK (en la área experimental?).
+- Calibración del equipo.
+
+
+
+
 ## [Rociado Residual Intradomiciliario^[Indoor Residual Spraying (IRS) en Ingles]]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
