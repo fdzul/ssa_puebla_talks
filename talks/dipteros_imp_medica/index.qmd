@@ -35,5 +35,14 @@ highlight-style: a11y
 
 ![](ciclo_transmision.png){.absolute top="250" left="600" width="550"}
 
-## [Rociado Residual Intradomiciliario]{style="color:#003300;align-items: center"}
+## [Taxonomia del Género Leishmania]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+![](genero_leish.png)
+
+## [Tropismo de las Leishmanias]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](tropismo_leish.png)
+
