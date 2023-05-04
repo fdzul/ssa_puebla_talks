@@ -3,7 +3,7 @@ format:
   revealjs:
     #theme: ["theme/q-theme.scss"]
     slide-number: c/t
-    logo: "https://salud.yucatan.gob.mx/files/get/2889?v=1669754780"
+    logo: "https://www.gob.mx/cms/uploads/action_program/main_image/26942/post_post_portadavectores.gif"
     footer: "[github.com/fdzul](https://lovely-licorice-326d63.netlify.app/talks/dipteros_imp_medica)"
     center-title-slide: true
 highlight-style: a11y
@@ -20,6 +20,8 @@ highlight-style: a11y
 <h4>Dr. Felipe Dzul Manzanilla</h4>
 
 <h5>Dr. Fabián Correa Morales</h5>
+
+<h5>Dr. Heron Huerta</h5>
 
 <h3>
 
