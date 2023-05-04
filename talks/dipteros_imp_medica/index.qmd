@@ -9,7 +9,7 @@ format:
 highlight-style: a11y
 ---
 
-<h2>Vigilancia Entomológica de la Leishmaniasis<br>en México</h2>
+<h2>Vigilancia Entomológica de la Leishmaniasis en México<br></h2>
 
 <h2>
 
@@ -33,7 +33,7 @@ highlight-style: a11y
 
 `r fontawesome::fa("github", "black")` [github.com/fdzul](https://fdzul.github.io/web_site_fadm/)
 
-![](irs.png){.absolute top="250" left="600" width="550"}
+![](ciclo_transmision.png){.absolute top="250" left="600" width="550"}
 
 ## [Rociado Residual Intradomiciliario]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
