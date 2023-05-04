@@ -35,8 +35,26 @@ highlight-style: a11y
 
 ![](ciclo_transmision.png){.absolute top="250" left="600" width="550"}
 
-## [Taxonomia del Género Leishmania]{style="color:#003300;align-items: center"}
 
+## [Manual de Leishmaniasis]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](guia_leish.png)
+:::
+
+::: {.column width="50%"}
+
+![](guia_leish_mex.png)
+:::
+
+::::
+
+
+## [Taxonomia del Género Leishmania]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](genero_leish.png)
