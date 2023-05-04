@@ -93,19 +93,6 @@ highlight-style: a11y
 ## [Vigilancia Entomológica]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-```{r}
-tibble::tibble(Objetivos = c("Confirmar Transmisión Autóctona", "Estimar los sitios más probables de transmisión", "Conocer las especies de vectores presentes", "Estacionalidad de las especies"),
-               "Método Entomólogicos" = c("Investigacion de Foco", "Relevamiento", "Investigacion de Foco y/o Relevamiento", "Monitoreo"),
-               "Area" = c()) |>
-  kableExtra::kable() |>
-  #kableExtra::kable_classic()
-  kableExtra::kable_material(c("striped", "hover"), font_size = 16)
-```
-
-
-## [Vigilancia Entomológica]{style="color:#003300;align-items: center"}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-
 
 ![](vig_ento.png)
 
