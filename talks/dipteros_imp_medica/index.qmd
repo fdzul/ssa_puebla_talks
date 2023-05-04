@@ -1,0 +1,39 @@
+---
+format: 
+  revealjs:
+    #theme: ["theme/q-theme.scss"]
+    slide-number: c/t
+    logo: "https://salud.yucatan.gob.mx/files/get/2889?v=1669754780"
+    footer: "[github.com/fdzul](https://lovely-licorice-326d63.netlify.app/talks/irs/#/)"
+    center-title-slide: true
+highlight-style: a11y
+---
+
+<h2>Rociado Residual Intradomiciliario<br>en el Control y la Prevención<br>de las ETVs</h2>
+
+<h2>
+
+</h2>
+
+<hr>
+
+<h4>Dr. Felipe Dzul Manzanilla</h4>
+
+<h5>Dr. Fabián Correa Morales</h5>
+
+<h3>
+
+</h3>
+
+<h5>2022-01-24</h5>
+
+<br>
+
+<h4>
+
+`r fontawesome::fa("github", "black")` [github.com/fdzul](https://fdzul.github.io/web_site_fadm/)
+
+![](irs.png){.absolute top="250" left="600" width="550"}
+
+## [Rociado Residual Intradomiciliario]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
