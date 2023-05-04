@@ -36,24 +36,31 @@ highlight-style: a11y
 ![](ciclo_transmision.png){.absolute top="250" left="600" width="550"}
 
 ## [Taxonomia del Género Leishmania]{style="color:#003300;align-items: center"}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](genero_leish.png)
 
 ## [Tropismo de las Leishmanias]{style="color:#003300;align-items: center"}
+
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](tropismo_leish.png)
 
-
 ## [Leishmaniasis en México]{style="color:#003300;align-items: center"}
+
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](mex_leish.png)
-
 
 ## [Escenarios Operativos]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](escarios_operativos.png)
+
+
+## [Escenarios Operativos]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](zona_vulnerable.png)
+
