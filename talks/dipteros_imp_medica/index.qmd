@@ -93,6 +93,19 @@ highlight-style: a11y
 ## [Vigilancia Entomológica]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+```{r}
+tibble::tibble(Objetivos = c("Confirmar Transmisión Autóctona", "Estimar los sitios más probables de transmisión", "Conocer las especies de vectores presentes", "Estacionalidad de las especies"),
+               "Método Entomólogicos" = c("Investigacion de Foco", "Relevamiento", "Investigacion de Foco y/o Relevamiento", "Monitoreo"),
+               "Area" = c()) |>
+  kableExtra::kable() |>
+  #kableExtra::kable_classic()
+  kableExtra::kable_material(c("striped", "hover"), font_size = 16)
+```
+
+
+## [Vigilancia Entomológica]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
 
 ![](vig_ento.png)
 
@@ -102,6 +115,12 @@ highlight-style: a11y
 
 
 ![](vig_ento2.png)
+
+## [Vigilancia Entomológica]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+![](alto_trans.png)
 
 ## [Estudio de Foco]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -143,7 +162,7 @@ highlight-style: a11y
 ::: {.column width="60%"}
 
 - Colecta el peridomicilio, & extradomicilio
-- Colecta durante tres días consecutivos.
+- Colecta durante tres noches consecutivos.
 - Colecta del anocher hasta las 22 o 23 hras
 - 30 minutos por peridomicilio y extradomicilio
 
@@ -152,7 +171,7 @@ highlight-style: a11y
 ::::
 
 
-## [Trampa Shanon]{style="color:#003300;align-items: center"}
+## [Trampas Shannon]{style="color:#003300;align-items: center"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -172,6 +191,87 @@ highlight-style: a11y
 
 ::::
 
+## [Relevamiento de la LC]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+![](relevamiento.png)
+
+
+## [Revelamiento Trampas CDC]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](cdc_HR.jpg)
+:::
+
+::: {.column width="60%"}
+
+- al menos 10 sitios donde residan casos recientes.
+- domicilio, peridomicilio & extradomicilio.
+- tres noches consecutivos.
+- anocher al amanecer
+- Repetir siempre que haya una situación de aumento de casos o una modificación ambiental.
+
+:::
+
+::::
+
+
+## [Monitoreo de la LC]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+![](monitoreo.png)
+
+
+## [Revelamiento Trampas CDC]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](cdc_fadm2.jpg)
+:::
+
+::: {.column width="60%"}
+
+- al menos 10 sitios donde residan casos recientes.
+- domicilio, peridomicilio & extradomicilio.
+- tres noches consecutivos.
+- anocher al amanecer
+- repetir por un periodo de dos años, de preferencia en la misma semana o fase lunar de cada mes.
+
+:::
+
+::::
+
+## [Revelamiento Trampas Shannon]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](shannon_HR.jpg)
+:::
+
+::: {.column width="60%"}
+
+- al menos 10 sitios donde residan casos recientes.
+- domicilio, peridomicilio & extradomicilio.
+- tres noches consecutivos.
+- anocher hasta las 12 0 23 hrs.
+- repetir un periodo de dos años igual que CDC.
+
+:::
+
+::::
+
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -183,3 +283,4 @@ highlight-style: a11y
 -   ***celular*** : [8139945623]()
 
 -   ***slides***: https://lovely-licorice-326d63.netlify.app/talks/dipteros_imp_medica/#/
+
