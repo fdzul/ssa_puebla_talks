@@ -161,7 +161,7 @@ img {
   <div class="item6">
   <img src="http://bugguide.net/images/raw/6KKK6KSKNK5KAKAQTKXKVKVQOKIKJ07KJ05QY09QF0GKCK7KDK5KWKQKTKWQAKUQZS7KJ07KHSVQRS.jpg" width="150" height="150"></div>
   <div class="item7">
-  <img src="https://erradica.com/wp-content/uploads/2016/11/Remedios-caseros-para-eliminar-las-chinches..jpg" width="150" height="150">
+  <img src="https://medlineplus.gov/images/Bedbugs.jpg" width="150" height="150">
   </div>
 </div>
 
@@ -210,6 +210,9 @@ img {
 
 </body>
 </html>
+
+## [IRS & Leishmaniasis]{style="color:#003300;align-items: center"}
+
 
 
 ## [Objetivo del IRS]{style="color:#003300;align-items: center"}
