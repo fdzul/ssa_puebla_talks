@@ -204,7 +204,7 @@ img {
   <div class="item3">**Chagas**</div>  
   <div class="item4">**IPPA**</div>
   <div class="item5">Paludismo</div>
-  <div class="item6">Leishmaniasis</div>
+  <div class="item6">Leishmaniasis*</div>
   <div class="item7">**Rickettsiosis**</div>
 </div>
 
@@ -212,7 +212,20 @@ img {
 </html>
 
 ## [IRS & Leishmaniasis]{style="color:#003300;align-items: center"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+:::: {.columns}
+
+::: {.column width="50%"}
+![](leish_tabasco1.png)
+
+:::
+
+::: {.column width="50%"}
+![](leish_tabasco2.png)
+:::
+
+::::
 
 
 ## [Objetivo del IRS]{style="color:#003300;align-items: center"}
@@ -474,7 +487,7 @@ a -> {b c d e f}
 
 ::: {.column width="60%"}
 
-<p style="color:#E01E5A;"> Que insecticida</p> (molecula y formulación) debe ser aplicado?.
+<p style="color:#E01E5A;"> Que insecticida</p> (molécula y formulación) debe ser aplicado?.
 Cual es el producto más adecuado tomando en consideración su<p style="color:#2EB67D;">seguridad, eficacia, aceptabilidad, costo y disponibilidad?</p>
 
 :::
@@ -582,15 +595,19 @@ tibble::tibble(Molecula = c("Bendiocarb",
                                  0.025,
                                  0.125,
                                  0.030)) |>
-    kableExtra::kable() |>
-    kableExtra::kable_classic() |>
-    kableExtra::kable_styling("striped", font_size = 22) |>
-    kableExtra::add_header_above(c("Insecticida" = 2, 
-                                   "Dosis gr.i/m2" = 2)) |>
-  kableExtra::add_footnote(c("Pesticides & Their Application. OMS 2006."), notation = "alphabet")
+    reactable::reactable(bordered = TRUE, 
+                         striped = TRUE, 
+                         highlight = TRUE,
+                         style = list(fontSize = '14px'),
+                         defaultPageSize = 20,
+                         columnGroups = list(
+                             reactable::colGroup(name = "Insecticida", columns = c("Molecula", "Grupo Químico")),
+                             reactable::colGroup(name = "Dosis (gr. i/m2)", columns = c("Aedes", "Triatominos"))
+                         ))
 
 ```
 
+[OMS, 2006](https://apps.who.int/iris/handle/10665/69223)
 
 ## [Recomendados por el CENAPRECE]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -628,14 +645,17 @@ tibble::tibble("Molecula" = c("Deltametrina",
                                  "0.4-1.0",
                                  1,
                                  NA)) |>
-    kableExtra::kable() |>
-    kableExtra::kable_classic() |>
-    kableExtra::kable_styling("striped", font_size = 22) |>
-    kableExtra::add_header_above(c("Insecticida" = 3, 
-                                   "Dosis gr.i/m2" = 2))
+    reactable::reactable(bordered = TRUE, 
+                         striped = TRUE, 
+                         highlight = TRUE,
+                         style = list(fontSize = '14px'),
+                         defaultPageSize = 20,
+                         columnGroups = list(
+                             reactable::colGroup(name = "Insecticida", columns = c("Molecula", "Concentracion","Grupo Químico")),
+                             reactable::colGroup(name = "Dosis (gr. i/m2)", columns = c("Aedes", "Triatominos"))
+                         ))
 ```
 
-[OMS, 2006](https://apps.who.int/iris/handle/10665/69223)
 
 
 ## [Donde Aplicar]{style="color:#FF5A5F;"}
@@ -665,31 +685,27 @@ a -> {b c d e f}
 ```
 
 
+
 ## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-```{r}
-DiagrammeR::grViz("
-digraph circo {
-graph [layout = circo]
-node [shape = circle,
-      style = filled, nodesep = 1, fixedsize = false, width = 2]
-a [label = 'Uso Sensato de los Insecticidas',  fillcolor =  '#767676', color = 'white', fontcolor = 'white', fontsize = 14]
+:::: {.columns}
 
-b [label = 'Que Aplicar',  fillcolor =  '#ECB22E', color = 'white', fontcolor = 'white',  fontsize = 20]
-c [label = 'Cuando Aplicar',  fillcolor =  '#E01E5A', color = 'white', fontcolor = 'white', fontsize = 20]
+::: {.column width="40%"}
+![](donde_aplicar.png)
+:::
 
-d [label = 'Con que Aplicar',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white', fontsize = 20]
-e [label = 'Como Aplicar',  fillcolor =  '#36C5F0', color = 'white', fontcolor = 'white', fontsize = 20]
-f [label = 'Donde Aplicar',  fillcolor =  '#FF5A5F', color = 'white', fontcolor = 'white', fontsize = 20]
+::: {.column width="60%"}
+Estratificación de Riesgo ó Escenarios Epidemiológicos.
 
+- En todo México en que localidades
+- En una ciudad en que áreas
+- En en el interior o en peridomicilio.
+- En en el interior: en el baño, sala, comedor, ó dormitorio.
 
-edge [color = grey]
+:::
 
-
-a -> {b c d e f}
-}")
-```
+::::
 
 
 ## [Estratifición del Riesgo]{style="color:#FF5A5F;"}
@@ -724,7 +740,7 @@ DiagrammeR::grViz("digraph {
   mov [label = 'Datos de Movilidad',  fillcolor =  ' #0F9D58', color = 'white', fontcolor = 'white']
  
  ### 
- ana [label = 'Estadísstica Multivariada',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+ ana [label = 'Estadística Multivariada',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
  
  ### 
  indice [label = 'Indice de Riesgo',  fillcolor =  'DodgerBlue', color = 'white', fontcolor = 'white']
@@ -741,8 +757,14 @@ DiagrammeR::grViz("digraph {
 ```
 
 
+
 ## [Donde Aplicar en Arbovirosis]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+- Transmisión Persistente (Hotspots).
+- Transmisión Activa (Cadenas de Transmisión).
+
+
 
 ## [Transmisión Persistente (Hotspots)]{style="color:#003300"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -979,7 +1001,7 @@ risk_transmision_activa(betas = merida$betas,
 </body>
 </html>
 
-## [Escenarios de la Transmisión Activa]{style="color:#003300"}
+## [Escenarios de la Transmisión]{style="color:#003300"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r risk_escenario_actual, out.height="100%", out.width="100%"}
@@ -1024,6 +1046,13 @@ a <- risk_map(risk = merida_risk,
 library(patchwork)
 a | b
 ```
+
+
+## [Donde Aplicar (Intra o Peri)]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](life_cycle_culicidae.png)
+
 
 
 ## [Cuando Aplicar]{style="color:#E01E5A;"}
