@@ -1051,7 +1051,7 @@ a | b
 ## [Donde Aplicar (Intra o Peri)]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-![](life_cycle_culicidae.png)
+![](life_cycle_culicidae.png){width=80%}
 
 
 
