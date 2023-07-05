@@ -1048,26 +1048,25 @@ a | b
 ```
 
 
-## [Donde Aplicar (Intra o Peri)]{style="color:#FF5A5F;"}
+## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-:::: {.columns}
-
-::: {.column width="40%"}
 ![](life_cycle_culicidae2.png)
-:::
-
-::: {.column width="60%"}
-
-![](https://journals.plos.org/plospathogens/article/figure?id=10.1371/journal.ppat.1006060.g002)
-:::
-
-::::
 
 
 
+## [Donde Aplicar]{style="color:#FF5A5F;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](life_cycle_gonotrophic.png)
 
 
+## [Donde Aplicar]{style="color:#FF5A5F;"}
+
+![](resting_tai.png)
+
+
+## [Donde Aplicar]{style="color:#FF5A5F;"}
 
 
 ## [Cuando Aplicar]{style="color:#E01E5A;"}
