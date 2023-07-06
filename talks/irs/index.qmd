@@ -1261,14 +1261,21 @@ ggplot2::ggplot() +
 
 ::: {.column width="60%"}
 ![](droplet_size.png)
+  
   - CFV.
+  
   - Tamaño de Gota 120-200 micras.
+  
   - Boquilla 8002E.
 
 :::
 
 ::::
 
+## [Valvulas de Control de Flujo (CFV)]{style="color:#0F9D58;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](cfv_hudson.png){fig-align="center"}
 
 ## [Valvulas de Control de Flujo (CFV)]{style="color:#0F9D58;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
