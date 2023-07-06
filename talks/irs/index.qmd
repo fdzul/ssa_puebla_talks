@@ -1071,11 +1071,20 @@ a | b
 ![](resting_tai.png)
 
 
-## [Donde Aplicar^[[Dzul-Manzanilla et al 2017](https://academic.oup.com/jme/article-abstract/54/2/501/2952758?redirectedFrom=fulltext&login=false)]]{style="color:#FF5A5F;"}
+## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-![](resting_mx.png)
+:::: {.columns}
 
+::: {.column width="40%"}
+![](resting_site_mx.png)
+:::
+
+::: {.column width="60%"}
+![](resting_mx.png)
+:::
+
+::::
 
 
 ## [Cuando Aplicar]{style="color:#E01E5A;"}
@@ -1234,8 +1243,11 @@ ggplot2::ggplot() +
 ```
 
 
-## [Con Que Aplicar]{style="color:#0F9D58;"}
+## [Con Que Aplicar. *Equipos de Aplicación*]{style="color:#0F9D58;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](equipment_irs.png){fig-align="center"}
+
 
 ## [Como Aplicar]{style="color:#36C5F0;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
