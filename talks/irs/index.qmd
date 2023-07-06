@@ -1243,10 +1243,43 @@ ggplot2::ggplot() +
 ```
 
 
-## [Con Que Aplicar. *Equipos de Aplicación*]{style="color:#0F9D58;"}
+## [Con Que Aplicar]{style="color:#0F9D58;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](equipment_irs.png){fig-align="center"}
+
+
+## [Con Que Aplicar]{style="color:#0F9D58;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](equipmente_evaluation_oms.png)
+:::
+
+::: {.column width="60%"}
+![](droplet_size.png)
+  - CFV.
+  - Tamaño de Gota 120-200 micras.
+  - Boquilla 8002E.
+
+:::
+
+::::
+
+
+## [Valvulas de Control de Flujo (CFV)]{style="color:#0F9D58;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](cfv.png){fig-align="center"}
+
+## [Boquilla para IRS]{style="color:#0F9D58;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](boquilla_8002E.png){fig-align="center"}
+
 
 
 ## [Como Aplicar]{style="color:#36C5F0;"}
