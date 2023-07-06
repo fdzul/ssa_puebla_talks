@@ -1051,7 +1051,8 @@ a | b
 ## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-![](life_cycle_culicidae2.png)
+![](life_cycle_culicidae2.png){fig-align="center" height=200}
+
 
 
 
@@ -1061,19 +1062,40 @@ a | b
 ![](life_cycle_gonotrophic.png)
 
 
+<h5>
+[Childs et al 2016](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006060)
+</h5>
+
+
 ## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](resting_tai.png)
 
-
-
+<h5>
+[Sean-arwut et al 2023](https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-023-05746-9)
+</h5>
 
 ## [Donde Aplicar]{style="color:#FF5A5F;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-![](resting_mx.png)
 
+:::: {.columns}
+
+::: {.column width="50%"}
+![](resting_site_mx.png)
+
+:::
+
+::: {.column width="50%"}
+![](resting_mx.png)
+:::
+
+::::
+
+<h5>
+[Dzul-Manzanilla et al 2017](https://academic.oup.com/jme/article-abstract/54/2/501/2952758?redirectedFrom=fulltext&login=false)
+</h5>
 
 ## [Cuando Aplicar]{style="color:#E01E5A;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
