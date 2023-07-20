@@ -1262,9 +1262,9 @@ ggplot2::ggplot() +
 ::: {.column width="60%"}
 ![](droplet_size.png)
   
-  - CFV.
+  - CFV (550 ml/min).
   
-  - Tamaño de Gota 120-200 micras.
+  - Tamaño de Gota (120-200 micras).
   
   - Boquilla 8002E.
 
@@ -1293,16 +1293,350 @@ ggplot2::ggplot() +
 
 ![](droplet_size_equipment.png){fig-align="center"}
 
-
 ## [Boquilla para IRS]{style="color:#0F9D58;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](boquilla_8002E.png){fig-align="center"}
 
+## [Boquilla para IRS]{style="color:#0F9D58;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](patternator.png)
+![](spray_coverage.png)
+:::
+
+::: {.column width="60%"}
+![](8002_vs_8002E.png)
+:::
+
+::::
+
+
+## [Manual de IRS OMS 2015]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](irs_oms_2015.png)
+:::
+
+::: {.column width="60%"}
+![](irs_who_2015_b.png)
+:::
+
+::::
+
+
+## [Manual de IRS OMS 2015]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](irs_oms_2015.png)
+:::
+
+::: {.column width="60%"}
+![](nozzle.png)
+:::
+
+::::
+
+
+## [Manual de IRS OMS 2015]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](irs_oms_2015.png)
+:::
+
+::: {.column width="60%"}
+![](cfv_who_2015.png)
+:::
+
+::::
+
+
+## [Dosis Bendiocarb]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+# Step 1. load the functions ####
+source("~/Library/CloudStorage/Dropbox/IRS_doses/functions/Dosis_IRS.R")
+
+
+# Step 2. calculate the doses for IRS with bendiocarb ####
+bendiocarb <- tibble::tibble(flow = rep(seq(from = 100, 
+                                            to = 1300, 
+                                            by = 50), 
+                                        times = 2),
+                             dose = c(dose_irs(swath = 75, 
+                                               speed = 2.2, 
+                                               flowrate = seq(from = 100, 
+                                                              to = 1300, 
+                                                              by = 50), 
+                                               formulation = "WP", 
+                                               cantidad = 125,
+                                               concentracion = 80, 
+                                               dilucion = 7.5),
+                                      dose_irs(swath = 75, 
+                                               speed = 2.2, 
+                                               flowrate = seq(from = 100, 
+                                                              to = 1300, 
+                                                              by = 50), 
+                                               formulation = "WP", 
+                                               cantidad = 125,
+                                               concentracion = 80, 
+                                               dilucion = 10))) |>
+    dplyr::mutate(insecticide = "Bendiocarb") |>
+    dplyr::mutate(volumen_total = rep(x = c("7.5 L", "10 L"), 
+                                      each = 25))
+
+
+ggplot2::ggplot() +
+    ggplot2::geom_line(data = bendiocarb, 
+                       ggplot2::aes(x = flow,
+                                    y = dose),
+                       linewidth = 1) +
+    ggplot2::geom_point(data = bendiocarb, 
+                        ggplot2::aes(x = flow,
+                                     y = dose), 
+                        shape = 21,
+                        fill = "black",
+                        size = 3,
+                        col = "#E01E5A") +
+    ggplot2::facet_grid(facets = "volumen_total",
+                        scales = "free") +
+    ggplot2::ylab("Doses (gr. i.a/m2)") +
+    ggplot2::xlab("Flow (ml/min") +
+    ggplot2::geom_vline(xintercept = 550, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_vline(xintercept = 550 + 55, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_hline(yintercept = .1, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_hline(yintercept = 0.4, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::scale_x_continuous(breaks = seq(from = 0, 
+                                             to = 1300, 
+                                             by = 200))
+
+
+
+```
+
+
+## [Dosis Propoxur]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+# Step 1. load the functions ####
+source("~/Library/CloudStorage/Dropbox/IRS_doses/functions/Dosis_IRS.R")
+
+# Step 4. calculate the doses for IRS with Propoxur ####
+propoxur1 <- tibble::tibble(flow = rep(seq(from = 100, 
+                                           to = 1300, 
+                                           by = 50), 
+                                       times = 2),
+                            dose = c(dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143,
+                                              concentracion = 70, 
+                                              dilucion = 7.5),
+                                     dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143,
+                                              concentracion = 70, 
+                                              dilucion = 10))) |>
+    dplyr::mutate(insecticide = "Propoxur") |>
+    dplyr::mutate(volumen_total = rep(x = c("7.5 L", "10 L"), 
+                                      each = 25)) |>
+    dplyr::mutate(Sobres = "1 Sobre")
+
+propoxur2 <- tibble::tibble(flow = rep(seq(from = 100, 
+                                           to = 1300, 
+                                           by = 50), 
+                                       times = 2),
+                            dose = c(dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143*2,
+                                              concentracion = 70, 
+                                              dilucion = 7.5),
+                                     dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143*2,
+                                              concentracion = 70, 
+                                              dilucion = 10))) |>
+    dplyr::mutate(insecticide = "Propoxur") |>
+    dplyr::mutate(volumen_total = rep(x = c("7.5 L", "10 L"), 
+                                      each = 25)) |>
+    dplyr::mutate(Sobres = "2 Sobres") 
+
+propoxur3 <- tibble::tibble(flow = rep(seq(from = 100, 
+                                           to = 1300, 
+                                           by = 50), 
+                                       times = 2),
+                            dose = c(dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143*3,
+                                              concentracion = 70, 
+                                              dilucion = 7.5),
+                                     dose_irs(swath = 75, 
+                                              speed = 2.2, 
+                                              flowrate = seq(from = 100, 
+                                                             to = 1300, 
+                                                             by = 50), 
+                                              formulation = "WP", 
+                                              cantidad = 143*3,
+                                              concentracion = 70, 
+                                              dilucion = 10))) |>
+    dplyr::mutate(insecticide = "Propoxur") |>
+    dplyr::mutate(volumen_total = rep(x = c("7.5 L", "10 L"), 
+                                      each = 25)) |>
+    dplyr::mutate(Sobres = "3 Sobres")
+
+propoxur <- dplyr::bind_rows(propoxur1, propoxur2, propoxur3)
+
+ggplot2::ggplot() +
+    ggplot2::geom_line(data = propoxur, 
+                       ggplot2::aes(x = flow,
+                                    y = dose),
+                       linewidth = 1) +
+    ggplot2::geom_point(data = propoxur, 
+                        ggplot2::aes(x = flow,
+                                     y = dose), 
+                        shape = 21,
+                        fill = "black",
+                        size = 3,
+                        col = "#E01E5A") +
+    ggplot2::facet_grid(facets = c(#"volumen_total", 
+        "Sobres",
+        "volumen_total"),
+        scales = "free") +
+    ggplot2::ylab("Doses (gr. i.a/m2)") +
+    ggplot2::xlab("Flow (ml/min") +
+    ggplot2::geom_vline(xintercept = 550, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_vline(xintercept = 550 + 55, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_hline(yintercept = 1, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_hline(yintercept = 2, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::scale_x_continuous(breaks = seq(from = 0, 
+                                             to = 1300, 
+                                             by = 200))
+         
+```
+
+## [Dosis Pirimifos-Metil]{style="color:#36C5F0;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r}
+# Step 1. load the functions ####
+source("~/Library/CloudStorage/Dropbox/IRS_doses/functions/Dosis_IRS.R")
+
+# Step 2. calculate the doses for IRS with pirimifos-metil ####
+pirimifos_metil <- tibble::tibble(flow = rep(seq(from = 100, 
+                                                 to = 1300, 
+                                                 by = 50), 
+                                             times = 2),
+                                  dose = c(dose_irs(swath = 75,
+                                                    speed = 2.2, # spraying speed (in seconds) per vertical metre on the wall
+                                                    flowrate = seq(from = 100, 
+                                                                   to = 1300, 
+                                                                   by = 50),
+                                                    formulation = "CS",
+                                                    cantidad = 833,
+                                                    concentracion = 28.16,
+                                                    dilucion = 6.667 + 0.833),
+                                           dose_irs(swath = 75,
+                                                    speed = 2.2, # spraying speed (in seconds) per vertical metre on the wall
+                                                    flowrate = seq(from = 100, 
+                                                                   to = 1300, 
+                                                                   by = 50),
+                                                    formulation = "CS",
+                                                    cantidad = 833,
+                                                    concentracion = 28.16,
+                                                    dilucion = 9.167 + 0.833))) |>
+    dplyr::mutate(insecticide = "Pirimifos-Metil") |>
+    dplyr::mutate(volumen_total = rep(x = c("7.5 L", "10 L"), 
+                                      each = 25))
+
+
+
+#
+ggplot2::ggplot() +
+    ggplot2::geom_line(data = pirimifos_metil, 
+                       ggplot2::aes(x = flow,
+                                    y = dose),
+                       linewidth = 1) +
+    ggplot2::geom_point(data = pirimifos_metil, 
+                        ggplot2::aes(x = flow,
+                                     y = dose), 
+                        shape = 21,
+                        fill = "black",
+                        size = 3,
+                        col = "#E01E5A") +
+    ggplot2::facet_grid(facets = "volumen_total",
+                        scales = "free") +
+    ggplot2::ylab("Doses (gr. i.a/m2)") +
+    ggplot2::xlab("Flow (ml/min") +
+    ggplot2::geom_vline(xintercept = 550, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_vline(xintercept = 550 + 55, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::geom_hline(yintercept = 1, 
+                        col = "#2EB67D",
+                        linetype = 3) +
+    ggplot2::scale_x_continuous(breaks = seq(from = 0, 
+                                             to = 1300, 
+                                             by = 200))
+
+```
 
 
 ## [Como Aplicar]{style="color:#36C5F0;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](parametros_irs.png)
+
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
